@@ -14,8 +14,10 @@
     "dev_html": "pug --pretty --watch --out web_ui/dist/ web_ui/routes",
     "build_css": "sass web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
     "dev_css": "sass --watch web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
-    "build_ui": "run-s cpy_img build_html build_css",
-    "dev_ui": "run-p -l dev_html dev_css cpy_img serve_ui",
+    "cpy_stimulus": "cpy node_modules/stimulus/dist/stimulus.umd.js web_ui/dist/lib/",
+    "cpy_jslib": "run-s cpy_stimulus",
+    "build_ui": "run-s cpy_img build_html build_css cpy_jslib",
+    "dev_ui": "run-p -l dev_html dev_css cpy_img cpy_jslib serve_ui",
     "serve_ui": "live-server web_ui/dist",
     "start_ui": "run-s clean_ui build_ui serve_ui",
     "clean_all": "run-s clean_docs clean_ui",
@@ -37,6 +39,7 @@
     "fabric": "^4.3.0",
     "live-server": "^1.2.1",
     "npm-run-all": "^4.1.5",
+    "stimulus": "^2.0.0",
     "xstate": "^4.15.2"
   },
   "devDependencies": {
