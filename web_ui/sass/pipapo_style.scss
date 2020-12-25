@@ -1,0 +1,71 @@
+/* pipapo_style.scss */
+// a comment not visible in the css output
+
+// html {
+:root {
+  text-align: left;
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+body {
+  background-color: #d3d2d1;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+
+// =============
+// header
+// =============
+
+body > header {
+  background-color: #9e988b;
+  text-align: center;
+  font-weight: bold;
+  color: #6b521c;
+
+}
+
+body > header > span {
+  font-size: 4em;
+  //vertical-align: middle;
+}
+
+
+// =============
+// main
+// =============
+
+body > main {
+  min-height: 80vh;
+}
+
+
+// =============
+// footer
+// =============
+
+body > footer {
+  background-color: #636059;
+  color: #210e05;
+  padding: 0.5em;
+  margin-top: 5rem;
+}
+
+body > footer > h1 {
+  //margin: 0.2em;
+  margin: 0;
+}
+
+body > footer > article > h2 {
+  margin-bottom: 0.2em;
+}
+
+body > footer > article > p, body > footer > article > ol {
+  margin: 0.2em;
+}
+

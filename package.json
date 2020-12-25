@@ -10,8 +10,11 @@
     "docs": "docs/make_the_docs.sh",
     "clean_ui": "rm -fr web_ui/dist",
     "cpy_img": "cpy web_ui/img/* web_ui/dist/img/",
-    "build_html": "pug --pretty  --out web_ui/dist/ web_ui/routes",
-    "build_ui": "run-s cpy_img build_html",
+    "build_html": "pug --pretty --out web_ui/dist/ web_ui/routes",
+    "dev_html": "pug --pretty --watch --out web_ui/dist/ web_ui/routes",
+    "build_css": "sass web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
+    "dev_css": "sass --watch web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
+    "build_ui": "run-s cpy_img build_html build_css",
     "serve_ui": "live-server web_ui/dist",
     "clean_all": "run-s clean_docs clean_ui",
     "build_all": "run-s docs build_ui",
@@ -36,6 +39,7 @@
   },
   "devDependencies": {
     "cpy-cli": "^3.1.1",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.30.0"
   }
 }
