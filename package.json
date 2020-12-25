@@ -1,0 +1,25 @@
+{
+  "name": "pipapo",
+  "version": "1.0.0",
+  "description": "=============== Notes on Pipapo ===============",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlyoleg/pipapo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlyoleg/pipapo/issues"
+  },
+  "homepage": "https://github.com/charlyoleg/pipapo#readme",
+  "dependencies": {
+    "fabric": "^4.3.0",
+    "xstate": "^4.15.2"
+  }
+}
