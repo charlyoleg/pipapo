@@ -1,0 +1,10 @@
+# .gitignore for pipapo
+*~
+*.pdf
+node_modules/
+.venv
+__pycache__/
+# for sphinc-doc and others
+build/
+# web-ui (aka front-end)
+web_ui/dist/
