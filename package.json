@@ -9,8 +9,9 @@
     "clean_docs": "rm -fr docs/build",
     "docs": "docs/make_the_docs.sh",
     "clean_ui": "rm -fr web_ui/dist",
+    "cpy_img": "cpy web_ui/img/* web_ui/dist/img/",
     "build_html": "pug --pretty  --out web_ui/dist/ web_ui/routes",
-    "build_ui": "run-s build_html",
+    "build_ui": "run-s cpy_img build_html",
     "serve_ui": "live-server web_ui/dist",
     "clean_all": "run-s clean_docs clean_ui",
     "build_all": "run-s docs build_ui",
@@ -34,6 +35,7 @@
     "xstate": "^4.15.2"
   },
   "devDependencies": {
+    "cpy-cli": "^3.1.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
