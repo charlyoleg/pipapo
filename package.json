@@ -1,7 +1,7 @@
 {
   "name": "pipapo",
   "version": "1.0.0",
-  "description": "=============== Notes on Pipapo ===============",
+  "description": "Proof-of-Concept for electron-app and snap-app with xstate and fabric",
   "main": "index.js",
   "private": true,
   "scripts": {
