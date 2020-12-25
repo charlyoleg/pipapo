@@ -24,10 +24,11 @@ Getting started
 
 In a bash terminal::
 
-  git pull 
+  git clone https://github.com/charlyoleg/pipapo
   cd pipapo
-  npm i
+  npm install
   npm run
   npm run install_py
+  npm run docs
 
 
