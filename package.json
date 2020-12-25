@@ -5,6 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "install_py": "PIPENV_VENV_IN_PROJECT=1 pipenv install",
+    "clean_docs": "rm -fr docs/build",
+    "docs": "docs/make_the_docs.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
