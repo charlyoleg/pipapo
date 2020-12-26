@@ -1,10 +1,10 @@
 /*! next_button_controller.ts */
 
-// typescript workaround
-//declare var Controller : any;
-
 import { Controller } from "stimulus";
-//import { Controller } from "../../../node_modules/stimulus/dist/stimulus.umd.js";
+//import { Controller } from "../../../node_modules/stimulus/";
+// typescript workaround
+//declare var Stimulus : any;
+
 
 
 class StimuControl extends Controller {
