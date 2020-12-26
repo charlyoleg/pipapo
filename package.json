@@ -14,7 +14,7 @@
     "dev_html": "pug --pretty --watch --out web_ui/dist/ web_ui/routes",
     "build_css": "sass web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
     "dev_css": "sass --watch web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
-    "cpy_stimulus": "cpy node_modules/stimulus/dist/stimulus.umd.js web_ui/dist/lib/",
+    "cpy_stimulus": "cpy node_modules/stimulus/dist/stimulus.umd.js web_ui/dist/libjs/",
     "cpy_jslib": "run-s cpy_stimulus",
     "build_js": "tsc --project web_ui/ts",
     "dev_js": "tsc --watch --project web_ui/ts",
