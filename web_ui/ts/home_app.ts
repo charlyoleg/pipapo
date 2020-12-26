@@ -1,7 +1,8 @@
 /*! home_app.ts */
 
-import { Application } from "stimulus"
-//import { Application } from "../../node_modules/stimulus/index.js"
+import { Application } from "stimulus";
+//import { Application } from "https://cdn.skypack.dev/stimulus";
+//import { Application } from "../../node_modules/stimulus/index.js";
 // typescript workaround
 //declare var Stimulus : any;
 
