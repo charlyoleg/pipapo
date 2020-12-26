@@ -8,7 +8,6 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "typeRoots": ["node_modules/@types"],
-    "moduleResolution": "node",
     "removeComments": false,
     "outDir": "../dist/js"
   },

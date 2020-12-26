@@ -1,14 +1,14 @@
 /*! next_button_controller.ts */
 
-import { Controller } from "stimulus";
+//import { Controller } from "stimulus";
 //import { Controller } from "https://cdn.skypack.dev/stimulus";
 //import { Controller } from "../../../node_modules/stimulus/index.js";
 // typescript workaround
-//declare var Stimulus : any;
+declare var Stimulus : any;
 
 
 
-class StimuControl extends Controller {
+class StimuControl extends Stimulus.Controller {
   // the following line is required by the Stimulus framework. This is the list of the data-target of the controller.
   static targets = [ "statusRo" ];
   // the following lines are required for typescript

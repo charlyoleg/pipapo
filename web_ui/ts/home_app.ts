@@ -1,10 +1,10 @@
 /*! home_app.ts */
 
-import { Application } from "stimulus";
+//import { Application } from "stimulus";
 //import { Application } from "https://cdn.skypack.dev/stimulus";
 //import { Application } from "../../node_modules/stimulus/index.js";
 // typescript workaround
-//declare var Stimulus : any;
+declare var Stimulus : any;
 
 
 // =========================
@@ -32,7 +32,7 @@ pipapo_info();
 // Stimulus init
 // =========================
 
-const stimulus_app = Application.start();
+const stimulus_app = Stimulus.Application.start();
 stimulus_app.register("tourniquet", NextButtonController);
 console.log("Stimulus is started");
 
