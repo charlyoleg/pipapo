@@ -1,7 +1,7 @@
 /*! home_app.ts */
 
 import { Application } from "stimulus"
-//import { Application } from "../../node_modules/stimulus"
+//import { Application } from "../../node_modules/stimulus/index.js"
 // typescript workaround
 //declare var Stimulus : any;
 

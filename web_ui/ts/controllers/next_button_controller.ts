@@ -1,7 +1,7 @@
 /*! next_button_controller.ts */
 
 import { Controller } from "stimulus";
-//import { Controller } from "../../../node_modules/stimulus/";
+//import { Controller } from "../../../node_modules/stimulus/index.js";
 // typescript workaround
 //declare var Stimulus : any;
 
