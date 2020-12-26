@@ -1,7 +1,8 @@
 /*! home_app.ts */
 
-// typescript declaration
-declare var Stimulus : any;
+// typescript workaround
+//declare var Application : any;
+import { Application } from "stimulus"
 
 
 // =========================
@@ -29,7 +30,7 @@ pipapo_info();
 // Stimulus init
 // =========================
 
-const stimulus_app = Stimulus.Application.start();
+const stimulus_app = Application.start();
 stimulus_app.register("next_button", NextButtonController);
 console.log("Stimulus is started");
 

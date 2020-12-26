@@ -12,8 +12,8 @@ class StimuControl extends Controller {
   static targets = [ "statusRo" ];
   // the following lines are required for typescript
   readonly statusRoTarget!: Element;
-  readonly statusRoTargets!: Element[];
-  readonly hasStatusRoTargets!: boolean;
+  //readonly statusRoTargets!: Element[];
+  //readonly hasStatusRoTargets!: boolean;
 
 
   // properties
