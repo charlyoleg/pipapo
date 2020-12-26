@@ -22,6 +22,10 @@ html(lang="en")
     main
       .dummy Once upon a time ...
 
+      section.island(data-controller="tourniquet")
+        button(type="button" data-action!="click->tourniquet#pressNext") Next
+        .gauge(data-tourniquet-target="statusRo")
+
     include ../pug_lib/footer.pug
 
     // The core logic

@@ -16,8 +16,10 @@
     "dev_css": "sass --watch web_ui/sass/pipapo_style.scss web_ui/dist/css/pipapo_style.css",
     "cpy_stimulus": "cpy node_modules/stimulus/dist/stimulus.umd.js web_ui/dist/lib/",
     "cpy_jslib": "run-s cpy_stimulus",
-    "build_ui": "run-s cpy_img build_html build_css cpy_jslib",
-    "dev_ui": "run-p -l dev_html dev_css cpy_img cpy_jslib serve_ui",
+    "build_js": "tsc --project web_ui/ts",
+    "dev_js": "tsc --watch --project web_ui/ts",
+    "build_ui": "run-s cpy_img build_html build_css cpy_jslib build_js",
+    "dev_ui": "run-p -l dev_html dev_css cpy_img cpy_jslib dev_js serve_ui",
     "serve_ui": "live-server web_ui/dist",
     "start_ui": "run-s clean_ui build_ui serve_ui",
     "clean_all": "run-s clean_docs clean_ui",
@@ -45,6 +47,7 @@
   "devDependencies": {
     "cpy-cli": "^3.1.1",
     "pug-cli": "^1.0.0-alpha6",
-    "sass": "^1.30.0"
+    "sass": "^1.30.0",
+    "typescript": "^4.1.3"
   }
 }
