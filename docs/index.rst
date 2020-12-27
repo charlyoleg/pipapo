@@ -11,6 +11,7 @@ Welcome to Pipapo's documentation!
    :caption: Contents:
 
    README
+   notes_on_pep
 
 
 Indices and tables
