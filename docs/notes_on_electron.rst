@@ -19,4 +19,17 @@ When using the file protocol ("file://"), which is the default in case of *elect
 
 By googling on the error *failed to load resource: net::err_file_not_found*, several forums recommend to use the html tag *<base href="./">*. But it doesn't fix the issue for me. The solution is not to use absolute path.
 
+caveat-2
+--------
+
+Do not use link to external pages (e.g. <a href="http://www.google.com"> ) as this external page will replace your electron-app. You can fix this issue in your *electron.js* as explained in the article https://www.grzegorowski.com/electron-open-in-new-window.
+
+
+caveat-3
+--------
+
+*electron-builder* works properly only if you configure your *package.json* and *electron.js* in away that *electron* can be started with the command::
+
+  electron .
+
 
