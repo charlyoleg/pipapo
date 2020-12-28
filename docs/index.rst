@@ -13,6 +13,7 @@ Welcome to Pipapo's documentation!
    README
    notes_on_pep
    notes_on_electron
+   notes_on_snapcraft
 
 
 Indices and tables
