@@ -1,5 +1,5 @@
 {
-  "name": "charlyoleg-pipapo",
+  "name": "pipapo",
   "version": "1.0.0",
   "description": "Proof-of-Concept for electron-app and snap-app with xstate and fabric",
   "main": "electron/main.js",
@@ -29,7 +29,7 @@
     "electro_clean": "rm -fr electro_dist electro_build",
     "snapcraft_login": "snapcraft login",
     "snapcraft_whoami": "snapcraft whoami",
-    "snapcraft_upload": "snapcraft upload --release=stable dist/charlyoleg-pipapo_1.0.0_amd64.snap",
+    "snapcraft_upload": "snapcraft upload --release=stable electro_dist/charlyoleg-pipapo_1.0.0_amd64.snap",
     "snapcraft_list": "snapcraft list && snapcraft list-revisions charlyoleg-pipapo && snapcraft status charlyoleg-pipapo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

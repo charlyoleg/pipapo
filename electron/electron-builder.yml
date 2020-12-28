@@ -6,7 +6,7 @@ asar: true
 directories:
   output: electro_dist
   buildResources: electro_build
-#  app: .
+  #app: .
 
 ## snap options
 snap:
@@ -16,3 +16,13 @@ snap:
 linux:
   icon: web_ui/img/pipapo_favicon.svg
   category: Utility
+
+## change snap name (overwrite package.json/name)
+extraMetadata:
+  name: charlyoleg-pipapo
+
+## content
+extraFiles: [
+  "web_ui/img/pipapo_favicon.svg",
+]
+
