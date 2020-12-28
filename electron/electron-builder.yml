@@ -22,12 +22,12 @@ extraMetadata:
   name: charlyoleg-pipapo
 
 ## content
-files: [
-  "web_ui/**/*",
-  "electron/main.js",
-  "node_modules/**/*",
-  "package.json"
-]
+#files: [
+#  "web_ui/**/*",
+#  "electron/main.js",
+#  "node_modules/**/*",
+#  "package.json"
+#]
 #extraFiles: [
 #  "web_ui/img/pipapo_favicon.svg",
 #]
