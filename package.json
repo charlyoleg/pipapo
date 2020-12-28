@@ -2,7 +2,7 @@
   "name": "pipapo",
   "version": "1.0.0",
   "description": "Proof-of-Concept for electron-app and snap-app with xstate and fabric",
-  "main": "index.js",
+  "main": "electron/main.js",
   "private": true,
   "scripts": {
     "install_py": "PIPENV_VENV_IN_PROJECT=1 pipenv install",
@@ -24,6 +24,7 @@
     "start_ui": "run-s clean_ui build_ui serve_ui",
     "clean_all": "run-s clean_docs clean_ui",
     "build_all": "run-s docs build_ui",
+    "start": "electron electron/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
