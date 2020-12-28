@@ -24,7 +24,7 @@
     "start_ui": "run-s clean_ui build_ui serve_ui",
     "clean_all": "run-s clean_docs clean_ui",
     "build_all": "run-s docs build_ui",
-    "start": "electron electron/main.js",
+    "start_electron": "electron electron/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
