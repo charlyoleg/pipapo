@@ -6,6 +6,7 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: 'web_ui/img/pipapo_favicon_256x256.png',
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,

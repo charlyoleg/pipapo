@@ -14,8 +14,8 @@ snap:
 
 ## linux options
 linux:
-  icon: web_ui/img/pipapo_favicon_256x256.png
   category: Utility
+  #icon: web_ui/img/pipapo_favicon_256x256.png
 
 ## change snap name (overwrite package.json/name)
 extraMetadata:
