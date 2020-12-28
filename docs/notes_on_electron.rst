@@ -22,7 +22,7 @@ By googling on the error *failed to load resource: net::err_file_not_found*, sev
 caveat-2
 --------
 
-Do not use link to external pages (e.g. <a href="http://www.google.com"> ) as this external page will replace your electron-app. You can fix this issue in your *electron.js* as explained in the article https://www.grzegorowski.com/electron-open-in-new-window.
+Do not use link to external pages (e.g. <a href="http://www.google.com"> ) as this external page will replace your electron-app. You can fix this issue in your *electron.js* as explained in the discussion-thread https://github.com/electron/electron/issues/1344
 
 
 caveat-3

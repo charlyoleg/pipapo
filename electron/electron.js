@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, shell, BrowserWindow } = require('electron')
 //const path = require('path');
 //const url = require('url');
 
@@ -42,4 +42,19 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+
+// Fix the issue of link to external pages
+app.on('web-contents-created', (e, contents) => {
+    contents.on('new-window', (e, url) => {
+      e.preventDefault();
+      shell.openExternal(url);
+    });
+    contents.on('will-navigate', (e, url) => {
+      if (url !== contents.getURL()) {
+        e.preventDefault();
+        shell.openExternal(url);
+      }
+    });
+});
 
