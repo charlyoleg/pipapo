@@ -28,7 +28,7 @@ files: [
   "node_modules/**/*",
   "package.json"
 ]
-extraFiles: [
-  "web_ui/img/pipapo_favicon.svg",
-]
+#extraFiles: [
+#  "web_ui/img/pipapo_favicon.svg",
+#]
 

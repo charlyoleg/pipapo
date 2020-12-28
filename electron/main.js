@@ -16,7 +16,8 @@ function createWindow () {
   //console.log('base_path: ' + base_path);
   //let base_url = `file://${__dirname}/../web_ui/dist/`;
   //console.log('base_url: ' + base_url);
-  win.loadFile('../web_ui/dist/index.html');
+  win.loadFile('web_ui/dist/index.html');
+  //win.loadFile('../web_ui/dist/index.html');
   //win.loadURL(`file://${__dirname}/../web_ui/dist/index.html`);
   //win.loadURL(base_url + 'index.html', {
   //  //baseURLForDataURL: base_url

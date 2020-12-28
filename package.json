@@ -24,7 +24,7 @@
     "start_ui": "run-s clean_ui build_ui serve_ui",
     "clean_all": "run-s clean_docs clean_ui",
     "build_all": "run-s docs build_ui",
-    "electro_start": "electron electron/main.js",
+    "electro_start": "electron .",
     "electro_dist": "electron-builder --config electron/electron-builder.yml --linux snap",
     "electro_clean": "rm -fr electro_dist electro_build",
     "snapcraft_login": "snapcraft login",
