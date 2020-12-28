@@ -14,7 +14,7 @@ snap:
 
 ## linux options
 linux:
-  icon: web_ui/img/pipapo_favicon.svg
+  icon: web_ui/img/pipapo_favicon_256x256.png
   category: Utility
 
 ## change snap name (overwrite package.json/name)
@@ -22,6 +22,12 @@ extraMetadata:
   name: charlyoleg-pipapo
 
 ## content
+files: [
+  "web_ui/**/*",
+  "electron/main.js",
+  "node_modules/**/*",
+  "package.json"
+]
 extraFiles: [
   "web_ui/img/pipapo_favicon.svg",
 ]
