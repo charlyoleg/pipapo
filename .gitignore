@@ -8,3 +8,5 @@ __pycache__/
 build/
 # web-ui (aka front-end)
 web_ui/dist/
+# electron-builder
+dist/
