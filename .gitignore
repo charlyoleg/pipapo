@@ -9,4 +9,5 @@ build/
 # web-ui (aka front-end)
 web_ui/dist/
 # electron-builder
-dist/
+electro_dist/
+electro_build/

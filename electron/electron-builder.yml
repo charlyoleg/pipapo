@@ -1,0 +1,18 @@
+# electron-builder.yml
+
+## general options
+#productName: lalila
+asar: true
+directories:
+  output: electro_dist
+  buildResources: electro_build
+#  app: .
+
+## snap options
+snap:
+ confinement: strict
+
+## linux options
+linux:
+  icon: web_ui/img/pipapo_favicon.svg
+  category: Utility
