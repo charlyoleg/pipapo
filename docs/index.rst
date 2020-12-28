@@ -12,6 +12,7 @@ Welcome to Pipapo's documentation!
 
    README
    notes_on_pep
+   notes_on_electron
 
 
 Indices and tables
