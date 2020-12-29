@@ -33,3 +33,14 @@ caveat-3
   electron .
 
 
+Notes
+=====
+
+note-1
+------
+
+*electron* comes with its typescript-definition and those from node. So you don't have to install *@types/node*. And you should not install it as it would conflict with the electron variant.
+
+
+
+
