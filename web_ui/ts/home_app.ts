@@ -37,8 +37,19 @@ stimulus_app.register("tourniquet", NextButtonController);
 console.log("Stimulus is started");
 
 
+// ================================
+// PWA service-worker registration
+// ================================
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/pwa/sw.js')
+           .then(() => { console.log('Pipapo service-worker registered'); });
+}
+
+
 // =========================
-// PWA install
+// PWA install button
 // =========================
 
 // using querySelector (instead of using Stimulus)
