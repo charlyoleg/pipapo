@@ -11,3 +11,5 @@ web_ui/dist/
 # electron-builder
 electro_dist/
 electro_build/
+# https web_server
+web_server/certificates/

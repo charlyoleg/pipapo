@@ -7,14 +7,13 @@ const script_dirname = __dirname;
 console.log('script_dirname: ' + script_dirname);
 
 
-
-import fs from 'fs';
 import express from 'express';
-
-
+import fs from 'fs';
+import https from 'https';
 
 const app = express();
 const PORT = 8080;
+
 
 // ### checking web server
 app.get('/mini_services/checki_pipapo_web_server', (req, res) => res.send('Hello from the pipapo_web_server.ts'));
@@ -25,7 +24,10 @@ app.use(express.static(script_dirname + '/../../web_ui/dist'));
 
 
 // ### the loop
-app.listen(PORT, () => {
+https.createServer({
+  key: fs.readFileSync('../certificates/pipapo_srv.key'),
+  cert: fs.readFileSync('../certificates/pipapo_srv.cert'),
+  }, app).listen(PORT, () => {
     console.log(`[pipapo_web_server]: Server is running at http://localhost:${PORT}`);
   });
 

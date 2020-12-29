@@ -31,6 +31,8 @@
     "snapcraft_whoami": "snapcraft whoami",
     "snapcraft_upload": "snapcraft upload --release=stable electro_dist/charlyoleg-pipapo_1.0.0_amd64.snap",
     "snapcraft_list": "snapcraft list && snapcraft list-revisions charlyoleg-pipapo && snapcraft status charlyoleg-pipapo",
+    "delete_certificate": "rm -fr web_server/certificates && mkdir web_server/certificates",
+    "generate_certificate": "openssl req -nodes -new -x509 -keyout web_server/certificates/pipapo_srv.key -out web_server/certificates/pipapo_srv.cert",
     "clean_web_server": "rm -fr web_server/build",
     "build_web_server": "tsc --project web_server/ts",
     "run_web_server": "node web_server/build/pipapo_web_server.js",
