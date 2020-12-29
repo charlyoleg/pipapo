@@ -1,3 +1,5 @@
+// electron_main.js
+
 const { app, shell, BrowserWindow } = require('electron')
 //const path = require('path');
 //const url = require('url');

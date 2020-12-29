@@ -2,7 +2,7 @@
   "name": "pipapo",
   "version": "1.0.0",
   "description": "Proof-of-Concept for electron-app and snap-app with xstate and fabric",
-  "main": "electron/electron.js",
+  "main": "electron/electron_main.js",
   "private": true,
   "scripts": {
     "install_py": "PIPENV_VENV_IN_PROJECT=1 pipenv install",
