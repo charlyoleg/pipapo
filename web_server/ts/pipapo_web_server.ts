@@ -25,9 +25,9 @@ app.use(express.static(script_dirname + '/../../web_ui/dist'));
 
 // ### the loop
 https.createServer({
-  key: fs.readFileSync('../certificates/pipapo_srv.key'),
-  cert: fs.readFileSync('../certificates/pipapo_srv.cert'),
+  key: fs.readFileSync(script_dirname + '/../certificates/pipapo_srv.key'),
+  cert: fs.readFileSync(script_dirname + '/../certificates/pipapo_srv.cert'),
   }, app).listen(PORT, () => {
-    console.log(`[pipapo_web_server]: Server is running at http://localhost:${PORT}`);
+    console.log(`[pipapo_web_server]: Server is running at https://localhost:${PORT}`);
   });
 
