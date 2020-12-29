@@ -52,5 +52,7 @@ In a bash terminal::
   cd
   sudo snap install charlyoleg-pipapo
   charlyoleg-pipapo
+  sudo snap refresh charlyoleg-pipapo
+  charlyoleg-pipapo
   sudo snap remove charlyoleg-pipapo
 
