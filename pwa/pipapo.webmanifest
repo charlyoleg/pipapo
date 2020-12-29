@@ -1,0 +1,15 @@
+{
+  "background_color": "orange",
+  "description": "the most stupid pwa pipapo",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "img/pipapo_favicon_256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "name": "The PiPaPo App lala",
+  "short_name": "Pipapo",
+  "start_url": "./index.html"
+}
