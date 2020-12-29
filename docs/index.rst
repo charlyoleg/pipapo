@@ -14,6 +14,7 @@ Welcome to Pipapo's documentation!
    notes_on_pep
    notes_on_electron
    notes_on_snapcraft
+   notes_on_pwa
 
 
 Indices and tables

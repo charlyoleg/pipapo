@@ -30,6 +30,18 @@ In a bash terminal::
   npm run
   npm run install_py
   npm run docs
+  npm run build_ui
+  npm run serve_ui
+  # run the electron-app
+  npm run electro_start
+  # build and upload the snap
+  npm run electro_dist
+  npm run snapcraft_upload
+  npm run snapcraft_list
+  # build and run the pwa
+  npm run generate_certificate
+  npm run build_web_server
+  npm run run_web_server
 
 
 Using the snap
